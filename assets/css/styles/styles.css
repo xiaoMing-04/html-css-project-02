@@ -52,21 +52,41 @@ a {
     margin-right: auto;
 }
 
-.primary-type {
+.heading {
     color: var(--primary-color-1);
     font-family: "Sen", sans-serif;
-    font-size: 3.8rem;
     font-weight: 700;
     line-height: 1.27;
+}
+
+.lv1 {
+    font-size: 5.8rem;
+    line-height: 1.17;
+    letter-spacing: -1.16px;
+    padding-top: 64px;
+}
+
+.lv2 {
+    font-size: 3.8rem;
     letter-spacing: -0.76px;
 }
 
+.lv3 {
+    font-family: "Poppins", sans-serif;
+    font-size: 1.8rem;
+    font-weight: 600;
+    line-height: 1.67;
+}
 
 .line-clamp {
     display: -webkit-box;
-    -webkit-line-clamp: var(--line-clamp, 2);
+    -webkit-line-clamp: var(--line-clamp, 1);
     -webkit-box-orient: vertical;
     overflow: hidden;
+}
+
+.line-clamp.line-2 {
+    --line-clamp : 2;
 }
 
 .desc {
@@ -168,13 +188,6 @@ a {
     gap: 230px;
 }
 
-.hero .info .title {
-    font-size: 5.8rem;
-    line-height: 1.17;
-    letter-spacing: -1.16px;
-    padding-top: 64px;
-}
-
 .hero .info {
     flex: 1;
 }
@@ -237,10 +250,6 @@ a {
     opacity: 0.7;
 }
 
-.hero .info .player .highlight:hover {
-    opacity: 0.8;
-}
-
 .hero .info .row:first-of-type {
     padding-top: 38px;
 }
@@ -298,12 +307,6 @@ a {
 .hero .stats-list .desc {
     font-size: 1.4rem;
     line-height: 1.85;
-}
-
-.hero .stats-list .highlight {
-    font-size: 1.8rem;
-    font-weight: 600;
-    line-height: 1.67;
 }
 
 .hero .stats-list .row {
@@ -394,7 +397,7 @@ a {
 .courses .list .item {
     border-radius: 12px;
     background-color: #fff;
-    box-shadow: 0px 18px 36px 0px rgba(0, 0, 0, 0.05);
+    border: 1px solid #e2dfda;
     flex: 1;
 }
 
@@ -408,24 +411,16 @@ a {
     justify-content: space-between;
 }
 
-.courses .box .sub-title {
-    font-family: "Poppins", sans-serif;
-    font-size: 1.8rem;
-    font-weight: 600;
-    line-height: 1.67;
-}
-
 .courses .list .desc {
     font-size: 1.4rem;
     font-weight: 400;
     line-height: 1.85;
     padding-top: 6px;
+    padding-right: 35px;
     word-break: break-all;
 }
 
 .courses .rate {
-    display: flex;
-    align-items: center;
     gap: 6px;
 }
 
@@ -437,30 +432,32 @@ a {
 }
 
 .courses .list .item-img {
-    width: 100%;
+    width: calc(100% + 2px);
     height: 278px;
     object-fit: cover;
     border-radius: 12px 12px 0 0;
+    margin-left: -1px;
+    margin-top: -1px;
 }
 
 .courses .list .row {
-    display: flex;
-    align-items: center;
     padding-top: 12px;
-    justify-content: space-between;
-}
-
-.courses .list .prices {
-    color: var(--primary-color-1x);
-    font-size: 1.8rem;
-    font-weight: 600;
-    line-height: 1.67;
 }
 
 .courses .list .btn-cta {
     background-color: var(--primary-color-1);
 }
 
-.courses .list .item:first-child .btn-cta {
+.courses .list .item .btn-cta:hover {
     background-color: var(--primary-color-2);
+}
+
+.courses .list .item:hover {
+    box-shadow: 0px 18px 36px 0px rgba(0, 0, 0, 0.05);
+    border: 1px solid transparent;
+}
+
+.courses .list .heading {
+    padding-right: 8px;
+    word-break: break-all;
 }
