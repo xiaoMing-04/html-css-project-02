@@ -20,80 +20,160 @@
     <!-- header -->
     <header class="header">
         <div class="content">
-            <div class="nav-bar">
+            <div class="body">
                 <a href="/" class="logo">
-                    <img src="./assets/img/Lesson..svg" alt="logo">
+                    <img src="./assets/img/logo.svg" alt="logo">
                 </a>
-                <ul class="list">
-                    <li class="item"><a href="#!">Home</a></li>
-                    <li class="item"><a href="#!">Courses</a></li>
-                    <li class="item"><a href="#!">Pricing</a></li>
-                    <li class="item"><a href="#!">Reviews</a></li>
-                </ul>
-                <a href="#!" class="btn btn-cta">Sign up</a>
+                <div class="nav-bar">
+                    <ul class="list">
+                        <li class="item active"><a href="/">Home</a></li>
+                        <li class="item"><a href="#courses">Courses</a></li>
+                        <li class="item"><a href="pricing">Pricing</a></li>
+                        <li class="item"><a href="reviews">Reviews</a></li>
+                    </ul>
+                </div>
+                <div class="action">
+                    <a href="#!" class="btn btn-cta">Sign up</a>
+                </div>
             </div>
         </div>
     </header>
     <!-- main -->
-    <main>
+    <main style="height: 1000px;">
         <!-- hero -->
         <div class="hero">
             <div class="content">
-                <div class="stats">
-                    <img class="big-img" src="./assets/img/hero/samsung-memory-4ICax0QMs8U-unsplash.jpg" alt="images">
-                    <div class="stats-table">
-                        <div class="stats-list">
-                            <div class="row">
-                                <div class="icon">
-                                    <img src="./assets/img/hero/Orion_page.svg" alt="icon">
+               <div class="body">
+                    <div class="stats">
+                        <img class="big-img" src="./assets/img/hero/guy-lesson 1.svg" alt="Learn without limits and spread knowledge.">
+                        <div class="stats-table">
+                            <div class="stats-list">
+                                <div class="row">
+                                    <div class="icon">
+                                        <img src="./assets/img/hero/Orion_page.svg" alt="icon">
+                                    </div>
+                                    <div class="stats-info">
+                                        <p class="desc">20 Courses</p>
+                                        <span class="highlight primary-type">UI/UX Design</span>
+                                    </div>
                                 </div>
-                                <div class="stats-info">
-                                    <p class="desc">20 Courses</p>
-                                    <span class="highlight primary-type">UI/UX Design</span>
+                                <div class="row">
+                                    <div class="icon">
+                                        <img src="./assets/img/hero/Orion_code-window.svg" alt="icon">
+                                    </div>
+                                    <div class="stats-info">
+                                        <p class="desc">20 Courses</p>
+                                        <span class="highlight primary-type">UI/UX Design</span>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="row">
-                                <div class="icon">
-                                    <img src="./assets/img/hero/Orion_code-window.svg" alt="icon">
-                                </div>
-                                <div class="stats-info">
-                                    <p class="desc">20 Courses</p>
-                                    <span class="highlight primary-type">UI/UX Design</span>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="icon">
-                                    <img src="./assets/img/hero/Orion_megaphone.svg" alt="icon">
-                                </div>
-                                <div class="stats-info">
-                                    <p class="desc">20 Courses</p>
-                                    <span class="highlight primary-type">UI/UX Design</span>
+                                <div class="row">
+                                    <div class="icon">
+                                        <img src="./assets/img/hero/Orion_megaphone.svg" alt="icon">
+                                    </div>
+                                    <div class="stats-info">
+                                        <p class="desc">30 Courses</p>
+                                        <span class="highlight primary-type">UI/UX Design</span>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="info">
-                    <h1 class="title primary-type">Learn without limits and spread knowledge.</h1>
-                    <p class="desc">Build new skills for that “this is my year” feeling with courses, certificates, and degrees from world-class universities and companies.</p>
-                    <div class="row">
-                        <a href="#!" class="btn btn-cta">See Course</a>
-                        <a href="#!" class="player">
-                            <div class="circle">
-                                <div class="right-arrow"></div>
-                            </div>
-                            <span class="highlight primary-type">Watch Video</span>
-                        </a>
-                    </div>
-                    <p class="desc">Recent engagement</p>
-                    <div class="row">
-                        <div class="quantity">
-                            <span class="number primary-type">50K</span>
-                            <span class="desc">Students</span>
+                    <div class="info">
+                        <h1 class="title primary-type">Learn without limits and spread knowledge.</h1>
+                        <p class="desc">Build new skills for that “this is my year” feeling with courses, certificates, and degrees from world-class universities and companies.</p>
+                        <div class="row">
+                            <a href="#!" class="btn btn-cta">See Course</a>
+                            <button class="player">
+                                <div class="circle">
+                                    <div class="right-arrow"></div>
+                                </div>
+                                <span class="highlight primary-type">Watch Video</span>
+                            </button>
                         </div>
-                        <div class="quantity">
-                            <span class="number primary-type">70+</span>
-                            <span class="desc">Courses</span>
+                        <p class="desc">Recent engagement</p>
+                        <div class="row">
+                            <div class="quantity">
+                                <strong class="number primary-type">50K</strong>
+                                <span class="desc">Students</span>
+                            </div>
+                            <div class="quantity">
+                                <strong class="number primary-type">70+</strong>
+                                <span class="desc">Courses</span>
+                            </div>
+                        </div>
+                    </div>
+               </div>
+            </div>
+        </div>
+        <!-- course -->
+        <div id="courses" class="courses">
+            <div class="content">
+                <div class="body">
+                    <div class="row">
+                        <h2 class="title primary-type">Our popular courses</h2>
+                    </div>
+                    <div class="row">
+                        <p class="desc">Build new skills with new trendy courses and shine for the next future career.</p>
+                        <div class="action">
+                            <button class="left-btn btn-cta">
+                                <img src="./assets/img/courses/yellow_arrow.svg" alt="">
+                            </button>
+                            <button class="right-btn btn-cta">
+                                <img src="./assets/img/courses/white_arrow.svg" alt="">
+                            </button>
+                        </div>
+                    </div>
+                    <div class="list">
+                        <div class="item">
+                            <img src="./assets/img/courses/Image.svg" alt="Basic web design" class="item-img">
+                            <div class="info">
+                                <div class="box">
+                                    <h3 class="sub-title">Basic web design</h3>
+                                    <div class="rate">
+                                        <img src="./assets/img/courses/Star.svg" alt="star" class="star">
+                                        <span class="rate-num">4.5</span>
+                                    </div>
+                                </div>
+                                <p class="desc line-clamp">Get the best course, gain knowledge and shine for your future career.</p>
+                                <div class="row">
+                                    <div class="prices">$120.75</div>
+                                    <a href="#!" class="btn btn-cta">Book Now</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <img src="./assets/img/courses/Image-2.svg" alt="Basic web design" class="item-img">
+                            <div class="info">
+                                <div class="box">
+                                    <h3 class="sub-title">UI/UX design</h3>
+                                    <div class="rate">
+                                        <img src="./assets/img/courses/Star.svg" alt="star" class="star">
+                                        <span class="rate-num">4.5</span>
+                                    </div>
+                                </div>
+                                <p class="desc line-clamp">Get the best course, gain knowledge and shine for your future career.</p>
+                                <div class="row">
+                                    <div class="prices">$120.75</div>
+                                    <a href="#!" class="btn btn-cta">Book Now</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <img src="./assets/img/courses/Image-3.svg" alt="Basic web design" class="item-img">
+                            <div class="info">
+                                <div class="box">
+                                    <h3 class="sub-title">Web App design</h3>
+                                    <div class="rate">
+                                        <img src="./assets/img/courses/Star.svg" alt="star" class="star">
+                                        <span class="rate-num">4.5</span>
+                                    </div>
+                                </div>
+                                <p class="desc line-clamp">Get the best course, gain knowledge and shine for your future career.</p>
+                                <div class="row">
+                                    <div class="prices">$120.75</div>
+                                    <a href="#!" class="btn btn-cta">Book Now</a>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
