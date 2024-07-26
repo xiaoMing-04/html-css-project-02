@@ -31,14 +31,13 @@ a {
 .btn {
     display: inline-block;
     min-width: 118px;
-    background-color: var(--primary-color-2);
+    background-color: var(--primary-color-1);
     border-radius: 25px;
     color: #fff;
     text-align: center;
     font-size: 1.4rem;
     font-weight: 600;
-    line-height: 1.85;
-    padding: 11px 16px;
+    line-height: 50px;
 }
 
 .btn:hover {
@@ -96,6 +95,11 @@ a {
     line-height: 1.67;
 }
 
+
+.hover:hover {
+    background-color: var(--primary-color-2);
+}
+
 /* ============================= header ========================  */
 
 .header {
@@ -127,7 +131,6 @@ a {
 .header .action .btn-cta {
     background-color: var(--primary-color-1);
     font-size: 1.6rem;
-    line-height: 1.75;
     width: 144px;
 }
 
@@ -207,6 +210,7 @@ a {
     width: 180px;
     padding: 17px 16px;
     border-radius: 32px;
+    background-color: var(--primary-color-2);
 }
 
 .hero .info .player {
@@ -444,14 +448,6 @@ a {
     padding-top: 12px;
 }
 
-.courses .list .btn-cta {
-    background-color: var(--primary-color-1);
-}
-
-.courses .list .item .btn-cta:hover {
-    background-color: var(--primary-color-2);
-}
-
 .courses .list .item:hover {
     box-shadow: 0px 18px 36px 0px rgba(0, 0, 0, 0.05);
     border: 1px solid transparent;
@@ -460,4 +456,331 @@ a {
 .courses .list .heading {
     padding-right: 8px;
     word-break: break-all;
+}
+
+/* ======================= feedback =========================== */
+
+.feedback {
+    margin-top: 200px;
+    background-color: #2e2100;
+}
+
+.feedback .content {
+    padding: 96px 0;
+}
+
+.feedback .body {
+    display: flex;
+    gap: 241px;
+}
+
+.feedback .users .avt {
+    width: 72px;
+    height: 72px;
+    border-radius: 50%;
+}
+
+.feedback .users .name {
+    color: #f7f7f7;
+    font-family: "Sen", sans-serif;
+    font-size: 2.4rem;
+    font-weight: 700;
+    line-height: 1.4;
+    padding-top: 18px;
+    white-space: nowrap;
+}
+
+.feedback .users .desc {
+    color: #bfbcb2;
+    font-size: 1.4rem;
+    line-height: 1.85;
+    padding-top: 4px;
+    white-space: nowrap;
+}
+
+.dot {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    padding-top: 28px;
+}
+
+.dt-item {
+    width: 6px;
+    height: 6px;
+    background-color: #634700;
+    border-radius: 50%;
+}
+
+.dt-item:nth-child(2) {
+    background-color: #ffb900;
+}
+
+.feedback .fb-content {
+    position: relative;
+    padding-top: 28px;
+    padding-left: 30px;
+}
+
+.feedback .fb-content .desc {
+    color: #fff;
+    font-size: 2.6rem;
+    font-style: italic;
+    line-height: 1.53;
+}
+
+.feedback .fb-content .double-quotes {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+/* ========================= course-desc ====================== */
+
+.course-desc {
+    margin-top: 200px;
+}
+
+.course-desc .body {
+    display: flex;
+    justify-content: space-between;
+}
+
+.course-desc .left {
+    width: 48.71%;
+}
+
+.course-desc .right {
+    width: 40.4%;
+}
+
+.course-desc .group-img {
+    position: relative;
+}
+
+.course-desc .group-img .img {
+    position: absolute;
+    width: 47.36%;
+    height: 404px;
+    border-radius: 16px;
+    object-fit: cover;
+}
+
+.course-desc .group-img .img:nth-child(2) {
+    top: 0;
+    right: 0;
+}
+
+.course-desc .group-img .img:first-child {
+    top: 34px;
+    left: 0;
+}
+
+.course-desc .info {
+    padding-top: 58px;
+}
+
+.course-desc .info .desc {
+    color: #5f5b53;
+    font-size: 1.6rem;
+    line-height: 1.75;
+    padding-top: 16px;
+}
+
+.course-desc .info .btn-cta {
+    margin-top: 32px;
+    min-width: 137px;
+}
+
+/* =========================== course-desc-2 ======================= */
+
+.course-desc .thumb .img {
+    width: 100%;
+    height: 440px;
+    border-radius: 20px;
+    object-fit: cover;
+}
+
+/* ====================== blogs ========================== */
+
+.blogs {
+    margin-top: 200px;
+    background-color: #fffcf4;
+}
+
+.blogs .content {
+    padding: 96px 0;
+}
+
+.blogs .head {
+    margin: 0 auto;
+    width: 38.29%;
+}
+
+.blogs .head .heading {
+    text-align: center;
+}
+
+.blogs .desc {
+    color: #696262;
+    font-size: 1.6rem;
+    line-height: 1.75;
+    text-align: center;
+    padding-top: 16px;
+}
+
+.blogs .list {
+    display: flex;
+    gap: 30px;
+    padding-top: 55px;
+}
+
+.blogs .list .item {
+    flex: 1;
+    border-radius: 16px 16px 0 0;
+    background-color: #fff;
+}
+
+.blogs .list .img {
+    width: 100%;
+    height: 250px;
+    border-radius: 16px 16px 0 0;
+    object-fit: cover;
+}
+
+.blogs .list .info {
+    padding: 20px 28px 20px;
+}
+
+.blogs .list .date {
+    color: #5f5b53;
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 1.85;
+}
+
+
+.blogs .list .date::before {
+    content: "";
+    display: inline-block;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background-color: var(--primary-color-2);
+    margin-right: 4px;
+    margin-bottom: 2px;
+}
+
+.blogs .list .date::after {
+    content: "";
+    display: block;
+    width: 48.48%;
+    height: 1px;
+    border-radius: 0.5px;
+    background-color: #e2dfda;
+    margin-top: 12px;
+}
+
+.blogs .list .heading {
+    padding-top: 12px;
+    font-size: 1.6rem;
+    line-height: 1.75;
+}
+
+.blogs .list .btn-cta {
+    margin-top: 12px;
+}
+
+.blogs .dot {
+    padding-top: 38px;
+    justify-content: center;
+}
+
+.blogs .dot .dt-item:not(.dt-item:nth-child(2)) {
+    background-color: #5f5b53;
+}
+
+/* ===================== footer ====================== */
+
+.footer {
+    background-color: #2e2100;
+}
+
+.footer .content {
+    padding: 96px 0 28px;
+}
+
+.footer .list {
+    display: flex;
+}
+
+.footer .contact {
+    width: 40%;
+    padding-top: 9px;
+}
+
+.footer .desc {
+    padding-top: 18px;
+    font-size: 1.4rem;
+    color: #bfbcb2;
+    line-height: 1.85;
+}
+
+.footer .list .item {
+    color: #fff;
+    font-size: 1.6rem;
+    font-weight: 600;
+    line-height: 1.75;
+}
+
+.footer .item .desc {
+    display: block;
+    padding: 6px 6px 6px 0;
+}
+
+.footer .item .desc:hover {
+    text-decoration: underline;
+}
+
+.footer .item:nth-child(2) {
+    margin-left: 145px;
+}
+
+.footer .item:nth-child(2)~.item {
+    margin-left: 130px;
+}
+
+.footer .line {
+    width: 130px;
+    height: 1px;
+    background-color: #595959;
+    margin-top: 14px;
+    margin-bottom: 22px;
+}
+
+.footer .w-100 {
+    margin-top: 38px;
+    width: 100%;
+}
+
+.footer .sub-item .head {
+    font-size: 1.4rem;
+}
+
+.footer .sub-item .highlight {
+    color: #fff;
+    font-weight: 600;
+    line-height: 1.85;
+}
+
+.footer .copyright {
+    color: #907d74;
+    text-align: center;
+    padding-top: 28px;
+}
+
+.footer .social-icon {
+    display: flex;
+    gap: 18px;
+    padding-top: 18px;
 }
