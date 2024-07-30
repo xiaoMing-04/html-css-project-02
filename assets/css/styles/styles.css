@@ -587,7 +587,7 @@ a {
     min-width: 137px;
 }
 
-/* =========================== features ======================= */
+/* =========================== features 2 ======================= */
 
 .features .thumb .img {
     width: 100%;
@@ -716,7 +716,7 @@ a {
     justify-content: space-between;
 }
 
-.footer .contact {
+.footer .item:first-child {
     padding-top: 9px;
 }
 
@@ -735,11 +735,6 @@ a {
     line-height: 1.75;
 }
 
-.footer .item .desc {
-    display: block;
-    padding: 6px 6px 6px 0;
-}
-
 .footer .item .desc:hover {
     text-decoration: underline;
 }
@@ -752,8 +747,24 @@ a {
     margin-bottom: 22px;
 }
 
+.footer .item:last-of-type {
+    width: 20%;
+}
 
-.footer .list .contact {
+.footer .sub-item a {
+    color: #bfbcb2;
+    font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 1.85;
+    display: block;
+    padding: 6px 0;
+}
+
+.footer .sub-item a:hover {
+    text-decoration: underline;
+}
+
+.footer .item:first-child {
     width: 22.82%;
 }
 
@@ -770,6 +781,7 @@ a {
     color: #fff;
     font-weight: 600;
     line-height: 1.85;
+    font-size: 1.4rem;
 }
 
 .footer .copyright {
