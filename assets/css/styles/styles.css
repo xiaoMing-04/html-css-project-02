@@ -18,6 +18,10 @@ html, body {
 
 /* ================= common ================ */
 
+.active {
+    background-color: #ffb900 !important;
+}
+
 :root {
     --primary-color-1: #171100;
     --primary-color-2: #ffb900;
@@ -91,7 +95,6 @@ a {
 .desc {
     color: var(--primary-color-3);
     font-size: 1.8rem;
-    font-weight: 400;
     line-height: 1.67;
 }
 
@@ -144,24 +147,21 @@ a {
     padding: 12px 21px;
     color: var(--primary-color-3);
     font-size: 1.6rem;
-    font-weight: 400;
     line-height: 1.75;
 }
 
-.header .list .active a {
+.header .list .nav-active a {
     position: relative;
     color: var(--primary-color-1);
-    font-size: 1.6rem;
     text-shadow: 1px 0 0 currentColor;
 }
 
 .header .list .item a:hover {
     color: var(--primary-color-1);
-    font-size: 1.6rem;
     text-shadow: 1px 0 0 currentColor;
 }
 
-.header .list .active a::after {
+.header .list .nav-active a::after {
     content: "";
     display: inline-block;
     background-color: var(--primary-color-1);
@@ -417,7 +417,6 @@ a {
 
 .courses .list .desc {
     font-size: 1.4rem;
-    font-weight: 400;
     line-height: 1.85;
     padding-top: 6px;
     padding-right: 35px;
@@ -430,8 +429,6 @@ a {
 
 .courses .rate .rate-num {
     color: #fea31b;
-    font-size: 1.6rem;
-    font-weight: 400;
     line-height: 1.75;
 }
 
@@ -469,9 +466,20 @@ a {
     padding: 96px 0;
 }
 
-.feedback .body {
+.feedback .feedback-list {
     display: flex;
-    gap: 241px;
+    overflow: hidden;
+}
+
+.feedback .feedback-item {
+    display: flex;
+    justify-content: space-between;
+    flex-shrink: 0;
+    width: 100%;
+}
+
+.feedback .fb-content {
+    width: 65.81%;
 }
 
 .feedback .users .avt {
@@ -487,7 +495,6 @@ a {
     font-weight: 700;
     line-height: 1.4;
     padding-top: 18px;
-    white-space: nowrap;
 }
 
 .feedback .users .desc {
@@ -495,7 +502,6 @@ a {
     font-size: 1.4rem;
     line-height: 1.85;
     padding-top: 4px;
-    white-space: nowrap;
 }
 
 .dot {
@@ -512,17 +518,13 @@ a {
     border-radius: 50%;
 }
 
-.dt-item:nth-child(2) {
-    background-color: #ffb900;
-}
-
 .feedback .fb-content {
     position: relative;
     padding-top: 28px;
     padding-left: 30px;
 }
 
-.feedback .fb-content .desc {
+.feedback .fb-content .quote {
     color: #fff;
     font-size: 2.6rem;
     font-style: italic;
@@ -535,66 +537,58 @@ a {
     left: 0;
 }
 
-/* ========================= course-desc ====================== */
+/* ========================= features ====================== */
 
-.course-desc {
+.features {
     margin-top: 200px;
 }
 
-.course-desc .body {
+.features .body {
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
-.course-desc .left {
+.features .left {
     width: 48.71%;
 }
 
-.course-desc .right {
-    width: 40.4%;
+.features .right {
+    width: 40.17%;
+    margin-left: 130px;
 }
 
-.course-desc .group-img {
-    position: relative;
+.features .images {
+    display: flex;
+    gap: 30px;
 }
 
-.course-desc .group-img .img {
-    position: absolute;
+.features .images .img:first-child {
+    margin-top: 34px;
+}
+
+.features .images .img {
     width: 47.36%;
     height: 404px;
     border-radius: 16px;
     object-fit: cover;
 }
 
-.course-desc .group-img .img:nth-child(2) {
-    top: 0;
-    right: 0;
-}
-
-.course-desc .group-img .img:first-child {
-    top: 34px;
-    left: 0;
-}
-
-.course-desc .info {
-    padding-top: 58px;
-}
-
-.course-desc .info .desc {
+.features .info .desc {
     color: #5f5b53;
     font-size: 1.6rem;
     line-height: 1.75;
     padding-top: 16px;
 }
 
-.course-desc .info .btn-cta {
+.features .info .btn-cta {
     margin-top: 32px;
     min-width: 137px;
 }
 
-/* =========================== course-desc-2 ======================= */
+/* =========================== features ======================= */
 
-.course-desc .thumb .img {
+.features .thumb .img {
     width: 100%;
     height: 440px;
     border-radius: 20px;
@@ -610,6 +604,16 @@ a {
 
 .blogs .content {
     padding: 96px 0;
+}
+
+.blogs .blogs-list {
+    display: flex;
+    overflow: hidden;
+}
+
+.blogs .blogs-item {
+    width: 100%;
+    flex-shrink: 0;
 }
 
 .blogs .head {
@@ -635,10 +639,13 @@ a {
     padding-top: 55px;
 }
 
+.blogs .list .item:hover {
+    box-shadow: 0px 16px 32px 0 rgba(0, 0, 0, 0.05);
+}
+
 .blogs .list .item {
-    flex: 1;
-    border-radius: 16px 16px 0 0;
     background-color: #fff;
+    border-radius: 16px;
 }
 
 .blogs .list .img {
@@ -657,8 +664,9 @@ a {
     font-size: 1.4rem;
     font-weight: 400;
     line-height: 1.85;
+    display: flex;
+    align-items: center;
 }
-
 
 .blogs .list .date::before {
     content: "";
@@ -668,11 +676,9 @@ a {
     border-radius: 50%;
     background-color: var(--primary-color-2);
     margin-right: 4px;
-    margin-bottom: 2px;
 }
 
-.blogs .list .date::after {
-    content: "";
+.blogs .list .line {
     display: block;
     width: 48.48%;
     height: 1px;
@@ -696,7 +702,7 @@ a {
     justify-content: center;
 }
 
-.blogs .dot .dt-item:not(.dt-item:nth-child(2)) {
+.blogs .dot .dt-item {
     background-color: #5f5b53;
 }
 
